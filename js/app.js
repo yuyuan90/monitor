@@ -26,6 +26,11 @@ var app  = new Framework7({
   routes: routes,
 });
 
+app.onPageInit('index', function (page) {
+
+  alert(page.query.building);
+});
+
 // Init/Create main view
 var mainView = app.views.create('.view-main', {
   url: '/'
