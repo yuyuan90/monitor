@@ -24,12 +24,13 @@ var app  = new Framework7({
   },
   // App routes
   routes: routes,
+  on: {
+    pageInit(page) {
+      alert(page.query.building);
+    }
+  }
 });
 
-app.onPageInit('user-form', function (page) {
-
-  alert(page.query.building);
-});
 
 // Init/Create main view
 var mainView = app.views.create('.view-main', {
