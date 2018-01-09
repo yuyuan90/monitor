@@ -36,7 +36,7 @@ app.on('pageInit', function (page) {
 var mainView = app.views.create('.view-main', {
   url: '/'
 });
-console.log(mainView.router.currentRoute.query);
+console.log(app.views.router.currentRoute.query);
 // Login Screen Demo
 $$('#my-login-screen .login-button').on('click', function () {
   var username = $$('#my-login-screen [name="username"]').val();
