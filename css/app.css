@@ -1,0 +1,73 @@
+
+.page-content .content-block-title{
+  text-align: center;
+  padding-top: 35px;
+  font-size: 22px;
+}
+.page-content .content-block-title span{
+  font-size: 14px;
+  color: #ccc;
+}
+.row.non-full-row{
+  justify-content: center;
+}
+a.button{
+  margin: 15px;
+  font-size: 16px;
+  font-size: 16px;
+}
+/* Active/tapped state */
+.homepage-btn-groups a.active-state {
+  color: white;
+  background-color: #2196f3 !important;
+}
+.ripple-wave {
+  background-color: #ff0000;
+}
+
+#cleaner-submit-popup p:first-child{
+  font-size: 22px;
+}
+#cleaner-submit-popup a{
+  font-size: 16px;
+}
+
+.cleaner-reminder,.user-reminder{
+  font-size: 12px;
+  color: black;
+}
+.cleaner-reminder-error{
+  color: red;
+
+}
+
+.stars{
+  text-align: center !important;
+
+}
+.stars a{
+  margin: 0 5px;
+}
+.stars i{
+  color: #F3CA49 !important;
+  font-size: 40px !important;
+  width: 40px !important;
+  height: 40px !important;
+}
+.user-comment,.manager-comment{
+  margin: 0 20px;
+  border: 1px solid #ccc;
+  border-radius:4px;
+  padding: 0 5px;
+}
+.manager-comment{
+  margin-top: 20px;
+}
+
+.manager-submit{
+  margin-bottom: 30px;
+}
+
+.team-table td, .team-table th{
+  text-align: center !important;
+}
