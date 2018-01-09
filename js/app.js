@@ -26,7 +26,7 @@ var app  = new Framework7({
   routes: routes,
 });
 
-app.onPageInit('index', function (page) {
+app.onPageInit('user-form', function (page) {
 
   alert(page.query.building);
 });
