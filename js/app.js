@@ -29,8 +29,7 @@ var app  = new Framework7({
 
 app.on('pageInit', function (page) {
   // do something on page init
-  alert('yoyoyo')
-  alert(page.query.building);
+  alert('yoyyo')
 });
 
 // Init/Create main view
