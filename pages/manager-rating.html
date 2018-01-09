@@ -1,0 +1,196 @@
+<!-- Views/Tabs container -->
+<div class="page" data-name="manager-rating">
+  <div class="views tabs ios-edges">
+    <!-- Tabbar for switching views-tabs -->
+    <div class="toolbar tabbar-labels toolbar-bottom-md">
+      <div class="toolbar-inner">
+        <a href="#view-manager-rating" class="tab-link tab-link-active">
+          <i class="icon f7-icons ios-only">bookmark</i>
+          <i class="icon f7-icons ios-only icon-ios-fill">bookmark_fill</i>
+          <i class="icon material-icons md-only">bookmark</i>
+          <span class="tabbar-label">打分</span>
+        </a>
+        <a href="#view-team" class="tab-link">
+          <i class="icon f7-icons ios-only">person</i>
+          <i class="icon f7-icons ios-only icon-ios-fill">person_fill</i>
+          <i class="icon material-icons md-only">person</i>
+          <span class="tabbar-label">人员管理</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Your main view/tab, should have "view-main" class. It also has "tab-active" class -->
+    <div id="view-manager-rating" class="view view-main tab tab-active">
+      <!-- Page, data-name contains page name which can be used in page callbacks -->
+      <div class="page" data-name="manager-rating">
+        <div class="navbar">
+          <div class="navbar-inner sliding">
+            <div class="left">
+              <a href="/manager-code/" class="link icon-only">
+                <i class="icon f7-icons ios-only">chevron_left</i>
+                <i class="icon material-icons md-only">chevron_left</i>
+              </a>
+            </div>
+            <div class="title">综保业务</div>
+          </div>
+        </div>
+
+
+        <!-- Scrollable page content-->
+        <div class="page-content">
+          <div class="content-block-title">SOHO大楼A座1楼洗手间1<br><span>上次打扫时间：2018/01/02 10:00</span></div>
+          <div class="block-title">评定标准</div>
+
+          <div class="list simple-list">
+            <ul>
+
+              <li>
+                <span>耗材及时添加</span>
+                <label class="toggle toggle-init toggle-init">
+                  <input type="checkbox" checked>
+                  <span class="toggle-icon"></span>
+                </label>
+              </li>
+              <li>
+                <span>目视地面无水渍</span>
+                <label class="toggle toggle-init toggle-init">
+                  <input type="checkbox" checked>
+                  <span class="toggle-icon"></span>
+                </label>
+              </li>
+              <li>
+                <span>目视台面无水渍</span>
+                <label class="toggle toggle-init toggle-init">
+                  <input type="checkbox" checked>
+                  <span class="toggle-icon"></span>
+                </label>
+              </li>
+              <li>
+                <span>马桶/小便池干净、无异味</span>
+                <label class="toggle toggle-init toggle-init">
+                  <input type="checkbox" checked>
+                  <span class="toggle-icon"></span>
+                </label>
+              </li>
+              <li>
+                <span>废纸篓垃圾无堆积</span>
+                <label class="toggle toggle-init toggle-init">
+                  <input type="checkbox" checked>
+                  <span class="toggle-icon"></span>
+                </label>
+              </li>
+              <li>
+                <span>目视卫生间内无蛛网</span>
+                <label class="toggle toggle-init toggle-init">
+                  <input type="checkbox" checked>
+                  <span class="toggle-icon"></span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="list no-hairlines-md">
+            <div class="content-block manager-comment">
+              <textarea class="description new-comment" placeholder="其他问题" can-value="newComment.text"></textarea>
+            </div>
+
+
+          </div>
+          <div class="row non-full-row manager-submit">
+            <div class="col-80">
+              <a href="#" class="col button button-round button-fill popup-open" data-popup="#cleaner-submit-popup">确认提交</a>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <!-- team View -->
+    <div id="view-team" class="view tab">
+
+      <!-- Page, data-name contains page name which can be used in page callbacks -->
+
+      <div class="page" data-name="team">
+        <div class="navbar">
+          <div class="navbar-inner sliding">
+            <div class="left">
+              <a href="/manager-code/" class="link icon-only">
+                <i class="icon f7-icons ios-only">chevron_left</i>
+                <i class="icon material-icons md-only">chevron_left</i>
+              </a>
+            </div>
+            <div class="title">综保业务</div>
+          </div>
+        </div>
+
+        <!-- Scrollable page content-->
+        <div class="page-content">
+          <div class="content-block-title">SOHO大楼A座1楼洗手间1<br><span>上次打扫时间：2018/01/02 10:00</span></div>
+          <div class="data-table">
+            <table>
+              <thead>
+              <tr>
+                <th class="label-cell">姓名</th>
+                <th class="numeric-cell">手机号</th>
+                <th class="label-cell">出勤</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr>
+
+                <td class="label-cell">坂本</td>
+                <td class="numeric-cell">12345678901</td>
+                <td class="label-cell">
+                  <label class="toggle toggle-init toggle-init">
+                    <input type="checkbox" checked>
+                    <span class="toggle-icon"></span>
+                  </label>
+
+                </td>
+              </tr>
+              <tr>
+
+                <td class="label-cell">坂本</td>
+                <td class="numeric-cell">12345678901</td>
+                <td class="label-cell">
+                  <label class="toggle toggle-init toggle-init">
+                    <input type="checkbox" checked>
+                    <span class="toggle-icon"></span>
+                  </label>
+
+                </td>
+              </tr>
+              <tr>
+
+                <td class="label-cell">坂本</td>
+                <td class="numeric-cell">12345678901</td>
+                <td class="label-cell">
+                  <label class="toggle toggle-init toggle-init">
+                    <input type="checkbox" checked>
+                    <span class="toggle-icon"></span>
+                  </label>
+
+                </td>
+              </tr>
+
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+      </div>
+
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+</div>
