@@ -29,10 +29,6 @@ var app  = new Framework7({
 
 });
 
-var now = app.utils.now();
-//var query = app.utils.parseUrlQuery('http://google.com/?id=5&foo=bar');
-//console.log(query);
-
 // Init/Create main view
 var mainView = app.views.create('.view-main', {
   url: '/'
@@ -42,15 +38,18 @@ var locationInfo = mainView.router.currentRoute.query;
 
 
 $$(document).on('page:init', function (e) {
+
   var page = e.detail;
   var thisUrl = window.location.href;
   var urlQuery = app.utils.parseUrlQuery(thisUrl);
   var building= urlQuery.building;
   var floors = urlQuery.floors;
   var room= urlQuery.room;
-  console.log(building);
-  console.log(floors);
-  console.log(room);
+
+  $$('.building').text(building);
+  $$('.floors').text(floors);
+  $$('.room').text(room);
+  
 
   //user-form page
 
