@@ -43,7 +43,7 @@ var locationInfo = mainView.router.currentRoute.query;
 
 $$(document).on('page:init', function (e) {
   var page = e.detail;
-  var thisUrl = window.location;
+  var thisUrl = window.location.href;
   var urlQuery = app.utils.parseUrlQuery(thisUrl);
   var building= urlQuery.building;
   var floors = urlQuery.floors;
