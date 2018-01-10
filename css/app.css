@@ -12,7 +12,12 @@
   justify-content: center;
 }
 a.button{
-  margin: 15px;
+  margin: 0 0 55px;
+  font-size: 16px;
+  font-size: 16px;
+}
+a.category-btn{
+  margin: 15px 0;
   font-size: 16px;
   font-size: 16px;
 }
@@ -32,17 +37,19 @@ a.button{
   font-size: 16px;
 }
 
-.cleaner-reminder,.user-reminder{
+.cleaner-reminder{
   font-size: 12px;
   color: black;
 }
-.cleaner-reminder-error{
+.cleaner-reminder-error,.user-reminder{
+  font-size: 12px;
   color: red;
 
 }
 
 .stars{
   text-align: center !important;
+  margin-bottom: 20px;
 
 }
 .stars a{
@@ -50,9 +57,18 @@ a.button{
 }
 .stars i{
   color: #F3CA49 !important;
-  font-size: 40px !important;
-  width: 40px !important;
-  height: 40px !important;
+  font-size: 35px !important;
+  width: 35px !important;
+  height: 35px !important;
+}
+#user-popup div{
+  text-align: center;
+}
+#user-popup p{
+  font-size: 20px;
+}
+#user-popup i{
+  color: #2196f3;
 }
 .user-comment,.manager-comment{
   margin: 0 20px;
