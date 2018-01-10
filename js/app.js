@@ -42,7 +42,7 @@ var locationInfo = mainView.router.currentRoute.query;
 
 
 $$(document).on('page:init', function (e) {
-  var page = e.detail.page;
+  var page = e.detail;
   console.log(page.query.building); 
   console.log(page.query.floors); 
   console.log(page.query.room); 
