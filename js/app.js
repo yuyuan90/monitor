@@ -42,17 +42,18 @@ var locationInfo = mainView.router.currentRoute.query;
 
 
 $$(document).on('page:init', function (e) {
-
-  var page = e.detail;
+  var page = e.detail.page;
+  console.log(page.query.building); 
+  console.log(page.query.floors); 
+  console.log(page.query.room); 
+  /*var page = e.detail;
   var thisUrl = page.route.route.url
   console.log(page.route.route.url);
   var urlQuery = app.utils.parseUrlQuery(thisUrl);
   var building= urlQuery.building;
   var floors = urlQuery.floors;
   var room= urlQuery.room;
-  alert(building);
-  alert(floors);
-  alert(room);
+  console.log(urlQuery);*/
 
   //user-form page
 
