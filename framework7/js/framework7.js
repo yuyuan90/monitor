@@ -19,15 +19,15 @@
 /**
  * Template7 1.3.1
  * Mobile-first HTML template engine
- * 
+ *
  * http://www.idangero.us/template7/
- * 
+ *
  * Copyright 2017, Vladimir Kharlampidi
  * The iDangero.us
  * http://www.idangero.us/
- * 
+ *
  * Licensed under MIT
- * 
+ *
  * Released on: October 25, 2017
  */
 var t7ctx;
@@ -9951,8 +9951,8 @@ var Dialog = {
   params: {
     dialog: {
       title: undefined,
-      buttonOk: 'OK',
-      buttonCancel: 'Cancel',
+      buttonOk: '确认',
+      buttonCancel: '取消',
       usernamePlaceholder: 'Username',
       passwordPlaceholder: 'Password',
       preloaderTitle: 'Loading... ',
