@@ -54,9 +54,13 @@ a.category-btn{
   width: 35px !important;
   height: 35px !important;
 }
-#user-popup div,#cleaner-popup div{
+#user-popup div{
   text-align: center;
   margin-top: 30% !important;
+}
+#cleaner-popup{
+  text-align: center;
+  padding-top: 30% !important;
 }
 #user-popup p,#cleaner-popup p{
   font-size: 20px;
