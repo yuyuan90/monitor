@@ -38,7 +38,7 @@
 
         <!-- Scrollable page content-->
         <div class="page-content">
-          <div class="content-block-title">SOHO大楼A座1楼洗手间1<br><span>上次打扫时间：2018/01/02 10:00</span></div>
+          <div class="content-block-title"><span class="building"></span><span class="floors"></span>层洗手间<span class="room"></span><br><span class="clean-time">上次打扫时间：2018/01/02 10:00</span></div>
           <div class="block-title">评定标准</div>
 
           <div class="list simple-list">
@@ -90,19 +90,16 @@
           </div>
           <div class="list no-hairlines-md">
             <div class="content-block manager-comment">
-              <textarea class="description new-comment" placeholder="其他问题" can-value="newComment.text"></textarea>
+              <textarea class="description new-comment" placeholder="其他问题"></textarea>
             </div>
 
 
           </div>
           <div class="row non-full-row manager-submit">
             <div class="col-80">
-              <a href="#" class="col button button-round button-fill popup-open" data-popup="#cleaner-submit-popup">确认提交</a>
+              <a id="manager-submit" href="#" class="col button button-round button-fill">确认提交</a>
             </div>
           </div>
-
-
-
         </div>
       </div>
     </div>
@@ -127,9 +124,9 @@
 
         <!-- Scrollable page content-->
         <div class="page-content">
-          <div class="content-block-title">SOHO大楼A座1楼洗手间1<br><span>上次打扫时间：2018/01/02 10:00</span></div>
+          <div class="content-block-title"><span class="building"></span><span class="floors"></span>层洗手间<span class="room"></span><br><span class="clean-time">上次打扫时间：2018/01/02 10:00</span></div>
           <div class="data-table">
-            <table>
+            <table class="team-table ">
               <thead>
               <tr>
                 <th class="label-cell">姓名</th>
