@@ -44,12 +44,13 @@ var locationInfo = mainView.router.currentRoute.query;
 $$(document).on('page:init', function (e) {
   var page = e.detail;
   var thisUrl = window.location;
-  console.log(thisUrl);
   var urlQuery = app.utils.parseUrlQuery(thisUrl);
   var building= urlQuery.building;
   var floors = urlQuery.floors;
   var room= urlQuery.room;
-  console.log(urlQuery);
+  console.log(building);
+  console.log(floors);
+  console.log(room);
 
   //user-form page
 
