@@ -1,4 +1,4 @@
-<div class="page" data-name="uder-form">
+<div class="page" data-name="user-form">
   <div class="navbar">
     <div class="navbar-inner sliding">
       <div class="left">
@@ -27,25 +27,20 @@
     <div class="list no-hairlines-md">
       <ul>
         <li class="stars">
-          <a href="#" class="link icon-only">
-            <i class="icon f7-icons ios-only">star_fill</i>
-            <i class="icon material-icons md-only">star_fill</i>
+          <a href="#" class="link icon-only" data-star="0">
+            <i class="f7-icons">star_fill</i>
           </a>
-          <a href="#" class="link icon-only">
-            <i class="icon f7-icons ios-only">star_fill</i>
-            <i class="icon material-icons md-only">star_fill</i>
+          <a href="#" class="link icon-only" data-star="1">
+            <i class="f7-icons">star_fill</i>
           </a>
-          <a href="#" class="link icon-only">
-            <i class="icon f7-icons ios-only">star_fill</i>
-            <i class="icon material-icons md-only">star_fill</i>
+          <a href="#" class="link icon-only" data-star="2">
+            <i class="f7-icons">star_fill</i>
           </a>
-          <a href="#" class="link icon-only">
-            <i class="icon f7-icons ios-only">star_fill</i>
-            <i class="icon material-icons md-only">star_fill</i>
+          <a href="#" class="link icon-only" data-star="3">
+            <i class="f7-icons">star_fill</i>
           </a>
-          <a href="#" class="link icon-only">
-            <i class="f7-icons ios-only">star</i>
-            <i class="material-icons md-only">star</i>
+          <a href="#" class="link icon-only" data-star="4">
+            <i class="f7-icons">star_fill</i>
           </a>
         </li>
         <li>
@@ -103,7 +98,7 @@
           <div class="item-inner">
             <div class="item-title item-label">您的姓名</div>
               <div class="item-input-wrap">
-                <input type="text" placeholder="姓名">
+                <input type="text" placeholder="姓名" id="username">
               </div>
             </div>
           </li>
@@ -111,7 +106,7 @@
           <div class="item-inner">
             <div class="item-title item-label">您的电话</div>
               <div class="item-input-wrap">
-                <input type="tel" placeholder="手机">
+                <input type="tel" placeholder="手机" id="user-phone">
               </div>
               <p class="user-reminder"> </p>
             </div>
@@ -122,7 +117,7 @@
 
     <div class="row non-full-row">
         <div class="col-80">
-          <a href="#" class="col button button-round button-fill popup-open" data-popup="#cleaner-submit-popup">确认提交</a>
+          <a id="user-submit" href="#" class="col button button-round button-fill dynamic-popup">确认提交</a>
         </div>
     </div>
 
