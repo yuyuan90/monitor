@@ -4,7 +4,7 @@
   padding-top: 35px;
   font-size: 22px;
 }
-.page-content .content-block-title span{
+.page-content .content-block-title span.clean-time{
   font-size: 14px;
   color: #ccc;
 }
@@ -28,13 +28,6 @@ a.category-btn{
 }
 .ripple-wave {
   background-color: #ff0000;
-}
-
-#cleaner-submit-popup p:first-child{
-  font-size: 22px;
-}
-#cleaner-submit-popup a{
-  font-size: 16px;
 }
 
 .cleaner-reminder{
@@ -61,14 +54,16 @@ a.category-btn{
   width: 35px !important;
   height: 35px !important;
 }
-#user-popup div{
+#user-popup div,#cleaner-popup div{
   text-align: center;
+  margin-top: 30% !important;
 }
-#user-popup p{
+#user-popup p,#cleaner-popup p{
   font-size: 20px;
 }
-#user-popup i{
+#user-popup i,#cleaner-popup i{
   color: #2196f3;
+  font-size: 38px;
 }
 .user-comment,.manager-comment{
   margin: 0 20px;
