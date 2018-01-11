@@ -12,8 +12,8 @@ var app  = new Framework7({
   data: function () {
     return {
       user: {
-        firstName: 'John',
-        lastName: 'Doe',
+        firstName: '',
+        lastName: '',
       },
     };
   },
@@ -95,9 +95,14 @@ $$(document).on('page:init', function (e) {
       var userphone = $$('#user-phone').val();
       if(username!=='' & userphone !== ''){
 
-        /* $$.ajax({
+
+
+        dynamicPopup.open();
+
+
+        /*$$.ajax({
           url:'',
-          data:{'data':jsonOrder},
+          data:{'data':''},
           type:'POST',
           beforeSend:function(){
             myApp.showPreloader('正在发送');
@@ -123,11 +128,16 @@ $$(document).on('page:init', function (e) {
 
 
 
-      }else if(username!=='' & userphone === ''){
+      }else if(username==='' & userphone !== ''){
+        $$('.user-reminder').text('请输入您的姓名');
+      }else if(username !=='' & userphone === ''){
         $$('.user-reminder').text('请输入电话号码');
       }else if(username==='' & userphone === ''){
         app.dialog.confirm('确定匿名提交？', '洗手间反馈调查', function () {
           //ajax and popup page
+          app.request.post('http://10.17.41.107:801/swagger/#!/Toilet/ApiServicesAppToiletJobContentPost', function (data) {
+            console.log(data);
+          });
 
           dynamicPopup.open();
 
@@ -137,12 +147,32 @@ $$(document).on('page:init', function (e) {
 
   };
 
+
+  //cleaner-code page
+  if(page.name==='cleaner-code'){
+    $$('#cleaner-code-submit').click(function () {
+      //if success
+      mainView.router.navigate('/cleaner-form/')
+    })
+
+  };
+
+
+  //manager-code page
+  if(page.name==='manager-code'){
+    $$('#manager-code-submit').click(function () {
+      //if success
+      mainView.router.navigate('/manager-rating/')
+    })
+
+  };
+
   //manager-rating page
   if(page.name==='manager-rating'){
 
     $$('#manager-submit').click(function () {
       //ajax
-          app.dialog.alert('评价成功，谢谢！','洗手间反馈调查');
+      app.dialog.alert('评价成功，谢谢！','洗手间反馈调查');
           //clear form
       $$('.manager-comment textarea').val('');
       $$('input[type="checkbox"]').prop('checked', true);
