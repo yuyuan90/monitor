@@ -10058,8 +10058,8 @@
     params: {
       dialog: {
         title: undefined,
-        buttonOk: 'OK',
-        buttonCancel: 'Cancel',
+        buttonOk: '确认',
+        buttonCancel: '取消',
         usernamePlaceholder: 'Username',
         passwordPlaceholder: 'Password',
         preloaderTitle: 'Loading... ',
