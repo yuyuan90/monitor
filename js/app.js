@@ -4,10 +4,10 @@ var $$ = Dom7;
 
 // Framework7 App main instance
 var app  = new Framework7({
-  root: '#app', // App root element
-  id: 'io.monitor.app', // App bundle ID
-  name: 'monitor', // App name
-  theme: 'auto', // Automatic theme detection
+  root: '#app',
+  id: 'io.monitor.app',
+  name: 'monitor',
+  theme: 'auto',
   // App root data
   data: function () {
     return {
@@ -19,11 +19,8 @@ var app  = new Framework7({
   },
   // App root methods
   methods: {
-    helloWorld: function () {
-      app.dialog.alert('Hello World!');
-    },
+
   },
-  // App routes
   routes: routes,
   init: false
 
@@ -33,7 +30,6 @@ var app  = new Framework7({
 var mainView = app.views.create('.view-main', {
   url: '/'
 });
-var locationInfo = mainView.router.currentRoute.query;
 
 
 
@@ -49,7 +45,10 @@ $$(document).on('page:init', function (e) {
   $$('.building').text(building);
   $$('.floors').text(floors);
   $$('.room').text(room);
-  
+
+  //last clean time
+
+
 
   //user-form page
 
@@ -83,12 +82,13 @@ $$(document).on('page:init', function (e) {
     var dynamicPopup = app.popup.create({
       content: '<div class="popup" id="user-popup">'+
       '<div class="block">'+
-      '<i class="f7-icons">check_round</i><p>反馈提交成功！感谢您的支持.</p>'+
+      '<i class="f7-icons">check_round</i><p>反馈提交成功，感谢您的支持！</p>'+
       '</div>'+
       '</div>',
       // Events
 
     });
+
 
     $$('#user-submit').click(function () {
       var username = $$('#username').val();
@@ -135,7 +135,22 @@ $$(document).on('page:init', function (e) {
       }
     })
 
+  };
 
+  //manager-rating page
+  if(page.name==='manager-rating'){
+
+    $$('#manager-submit').click(function () {
+      //ajax
+          app.dialog.alert('评价成功，谢谢！','洗手间反馈调查');
+          //clear form
+      $$('.manager-comment textarea').val('');
+      $$('input[type="checkbox"]').prop('checked', true);
+
+
+    });
+
+    //human resources
 
 
   }
