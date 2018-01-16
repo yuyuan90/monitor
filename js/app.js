@@ -31,7 +31,14 @@ var mainView = app.views.create('.view-main', {
   url: '/'
 });
 
+if(window.localStorage){
 
+        alert('yes');
+
+      }else{
+
+        alert('no')
+      };
 
 $$(document).on('page:init', function (e) {
 
@@ -162,11 +169,7 @@ $$(document).on('page:init', function (e) {
   if(page.name==='manager-code'){
     $$('#manager-code-submit').click(function () {
       //if success
-      mainView.router.navigate('/manager-rating/',{
-              context:{
-                'test':90
-              }
-            });
+      mainView.router.navigate('/manager-rating/');
     })
 
   };
