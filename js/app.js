@@ -164,7 +164,7 @@ $$(document).on('page:init', function (e) {
       //if success
       mainView.router.navigate('/manager-rating/',{
               context:{
-                test:90
+                'test':90
               }
             });
     })
