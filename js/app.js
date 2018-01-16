@@ -162,7 +162,11 @@ $$(document).on('page:init', function (e) {
   if(page.name==='manager-code'){
     $$('#manager-code-submit').click(function () {
       //if success
-      mainView.router.navigate('/manager-rating/')
+      mainView.router.navigate('/manager-rating/',{
+              context:{
+                test:90
+              }
+            });
     })
 
   };
