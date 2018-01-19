@@ -11,14 +11,16 @@
 .row.non-full-row{
   justify-content: center;
 }
+#manager-code-submit, #cleaner-code-submit{
+  letter-spacing: 2px;
+
+}
 a.button{
   margin: 0 0 55px;
-  font-size: 16px;
   font-size: 16px;
 }
 a.category-btn{
   margin: 15px 0;
-  font-size: 16px;
   font-size: 16px;
 }
 /* Active/tapped state */
@@ -29,17 +31,19 @@ a.category-btn{
 .ripple-wave {
   background-color: #ff0000;
 }
-
-.cleaner-reminder{
+.cleaner-reminder,.manager-reminder{
   font-size: 12px;
   color: black;
 }
-.cleaner-reminder-error,.user-reminder{
+.cleaner-reminder-error,.user-reminder,.manager-reminder-error{
   font-size: 12px;
   color: red;
 
 }
+#stars-list{
+  padding: 20px 0;
 
+}
 .stars{
   text-align: center !important;
   margin-bottom: 20px;
@@ -54,11 +58,7 @@ a.category-btn{
   width: 35px !important;
   height: 35px !important;
 }
-#user-popup div{
-  text-align: center;
-  margin-top: 30% !important;
-}
-#cleaner-popup{
+#user-popup div, #cleaner-popup div{
   text-align: center;
   padding-top: 30% !important;
 }
