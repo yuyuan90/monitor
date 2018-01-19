@@ -14,16 +14,16 @@
     <div class="content-block-title"><span class="building"></span><span class="floors"></span>层洗手间<span class="room"></span><br><span class="clean-time">上次打扫时间：2018/01/02 10:00</span></div>
     <div class="block">
       <div class="row non-full-row">
-        <div class="col-80">
+        <div class="col-100">
           <div class="list no-hairlines-md">
             <ul>
               <li class="item-content item-input">
                 <div class="item-inner">
                   <div class="item-title item-label">请输入您的手机号</div>
                   <div class="item-input-wrap">
-                    <input type="tel" placeholder="大陆地区">
+                    <input type="tel" placeholder="大陆地区" id="cleaner-phone" maxlength="11">
                   </div>
-                  <p class="cleaner-reminder"></p>
+                  <p class="reminder cleaner-reminder"></p>
                 </div>
               </li>
             </ul>
@@ -31,7 +31,6 @@
         </div>
 
       </div>
-
       <div class="row non-full-row">
         <div class="col-80">
           <a id="cleaner-code-submit" href="#" class="col button button-round button-fill">进入系统</a>
