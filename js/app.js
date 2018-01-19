@@ -31,14 +31,7 @@ var mainView = app.views.create('.view-main', {
   url: '/'
 });
 
-if(window.localStorage){
 
-        alert('yes');
-
-      }else{
-
-        alert('no')
-      };
 
 $$(document).on('page:init', function (e) {
 
@@ -122,7 +115,8 @@ $$(document).on('page:init', function (e) {
             if(data =='success')
             {
 
-              alert('success');
+              
+             ('success');
             }
             else
             {
