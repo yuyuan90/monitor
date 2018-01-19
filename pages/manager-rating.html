@@ -5,15 +5,11 @@
     <div class="toolbar tabbar-labels toolbar-bottom-md">
       <div class="toolbar-inner">
         <a href="#view-manager-rating" class="tab-link tab-link-active">
-          <i class="icon f7-icons ios-only">bookmark</i>
-          <i class="icon f7-icons ios-only icon-ios-fill">bookmark_fill</i>
-          <i class="icon material-icons md-only">bookmark</i>
+          <i class="f7-icons">bookmark_fill</i>
           <span class="tabbar-label">打分</span>
         </a>
-        <a href="#view-team" class="tab-link">
-          <i class="icon f7-icons ios-only">person</i>
-          <i class="icon f7-icons ios-only icon-ios-fill">person_fill</i>
-          <i class="icon material-icons md-only">person</i>
+        <a href="#view-team" class="tab-link" id="management-link">
+          <i class="f7-icons">person_fill</i>
           <span class="tabbar-label">人员管理</span>
         </a>
       </div>
@@ -88,11 +84,12 @@
               </li>
             </ul>
           </div>
-          <div class="list no-hairlines-md">
-            <div class="content-block manager-comment">
-              <textarea class="description new-comment" placeholder="其他问题"></textarea>
+          <div class="block">
+            <div class="list no-hairlines-md">
+              <div class="content-block manager-comment">
+                <textarea class="description new-comment" placeholder="其他问题"></textarea>
+              </div>
             </div>
-
 
           </div>
           <div class="row non-full-row manager-submit">
